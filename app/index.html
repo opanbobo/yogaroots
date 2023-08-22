@@ -8,6 +8,9 @@
     <title>yogaroots</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- build:css styles/vendor.css -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
     <!-- endbuild -->
@@ -22,48 +25,55 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills float-right">
-          <li class="nav-item">
-            <a href="#" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
-          </li>
-        </ul>
-        <h3 class="text-muted">yogaroots</h3>
-      </div>
-
-      <div class="jumbotron">
-        <h1 class="display-3">'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-        </div>
-      </div>
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
+    <div id="header" class="">
+      <div class="container">
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid">
+            <a class="navbar-brand d-md-none" href="#">
+              <img src="images/logo.png" alt="" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Trainers</a>
+                </li>
+                <a class="navbar-brand d-none d-md-block" href="#">
+                  <img src="images/logo.png" alt="" class="img-fluid">
+                </a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Classes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
     </div>
+    <main>
+      
+      <section id="after-header" class="home-section-1">
+        <div class="container">
+          <div class="floating-text-wrapper position-relative">
+            <div class="home-banner"><img src="images/home_banner.jpg" alt="" class="img-fluid"></div>
+            <div class="row">
+              <div class="col-md-4 position-relative pt-5">
+                <h1>Embark new state of balance & consciousness of living</h1>
+                <p class="tagline">In Yoga Roots, we believe yoga is a profound union between breath, body, mind, and soul. We aim to provide an experience that goes beyond physical postures, by offering mental clarity and a heightened state of consciousness.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
