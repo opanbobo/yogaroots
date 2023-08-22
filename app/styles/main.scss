@@ -25,7 +25,7 @@ body{
 }
 
 #after-header{
-  padding: 10em 0;
+  padding: 10em 0 20em;
 }
 .home-section-1{
   background: url(../images/bg_home_banner.png) no-repeat;
@@ -35,15 +35,16 @@ body{
     .home-banner{
       position: absolute;
       right: 0;
+      overflow: hidden;
     }
-    h1{
+    .title{
       font-family: 'Arsenal', sans-serif;
-      font-size: 46px;
+      font-size: 43px;
       font-weight: 400;
     }
     .tagline{
       font-family: 'Figtree', sans-serif;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 300;
       line-height: 25px;
     }
