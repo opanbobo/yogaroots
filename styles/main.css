@@ -11904,4 +11904,21 @@ body {
   line-height: 25px;
 }
 
+.home-section-2 {
+  background-color: #F8F7F4;
+}
+.home-section-2 .text-float-right {
+  color: #737373;
+}
+.home-section-2 .text-float-right h1, .home-section-2 .text-float-right .h1 {
+  font-weight: 400;
+  font-size: 32px;
+  color: #524840;
+}
+.home-section-2 .text-float-right .desc {
+  font-weight: 300;
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=main.css.map */
