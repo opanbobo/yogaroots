@@ -1,7 +1,7 @@
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 body{
-  font-family: 'Arsenal', sans-serif;
+  font-weight: 300;
+  font-family: 'Figtree', sans-serif;
 }
 
 #header{
@@ -45,9 +45,7 @@ body{
       font-weight: 400;
     }
     .tagline{
-      font-family: 'Figtree', sans-serif;
       font-size: 14px;
-      font-weight: 300;
       line-height: 25px;
     }
   }
@@ -63,9 +61,54 @@ body{
       color: #524840;
     }
     .desc{
-      font-weight: 300;
-      font-family: 'Figtree', sans-serif;
       font-size: 16px;
+    }
+  }
+}
+.home-section-3{
+  background: url(../images/bg_home_classes.png) no-repeat;
+  background-size: cover;
+  .column-wrapper-classes{
+    .title{
+      color: #524840;
+      font-size: 48px;
+      font-weight: 400;
+    }
+    .desc{
+      color: #737373;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 25px;
+    }
+    .block{
+      overflow: hidden;
+      .img{
+        transition: .3s ease-in-out;
+        @media screen and (min-width: 768px) {
+          overflow: hidden;
+          max-height: 287px;
+        }
+        &:hover{
+          opacity: .5;
+        }
+        a{
+          display: block;
+        }
+      }
+      .column-white{
+        .name{
+          font-family: 'Arsenal', sans-serif;
+          font-weight: 400;
+          font-size: 28px;
+          a{
+            color: #524840;
+            text-decoration: none;
+            &:hover{
+              color: #DED6C7;
+            }
+          }
+        }
+      }
     }
   }
 }
