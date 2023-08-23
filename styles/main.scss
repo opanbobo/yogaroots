@@ -10,16 +10,56 @@ body{
   left: 0;
   right: 0;
   z-index: 12;
+  transition: background 0.3s;
   @media screen and (max-width:567px) {
     background-color: rgba(255, 255, 255, 0.89);
+  }
+  &.scroll-head{
+    background-color: rgba(255, 255, 255, 0.5);
   }
   .navbar {
     .navbar-nav {
       align-items: center;
+      font-family: 'Arsenal', sans-serif;
+      .nav-item{
+        position: relative;
+      }
       .nav-link{
         color: #fff;
         font-size: 20px;
-        padding: 0 80px;
+        padding: 20px 80px;
+        color: #524840;
+        &:hover{
+          &::before{
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 3px;
+            bottom: 13px;
+            background: #000;
+            left: 45%;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer{
+  background-color: #B9B2A6;
+  .logo-bottom{
+    img{
+      width: 72px;
+    }
+  }
+  .column-footer-text-wrapper{
+    .title-footer{
+      border-bottom: 1px solid;
+      padding-bottom: 1px;
+      margin-bottom: 10px;
+    }
+    .socmed-link{
+      a{
         color: #524840;
       }
     }
@@ -48,6 +88,21 @@ body{
       font-size: 14px;
       line-height: 25px;
     }
+    .block-more{
+      a{
+        background-color: #DED6C7;
+        border-color: transparent;
+        color: #524840;
+        font-family: 'Arsenal', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        &:hover{
+          background-color: transparent;
+          border-color: #DED6C7;
+          color: #DED6C7;
+        }
+      }
+    }
   }
 }
 
@@ -56,12 +111,26 @@ body{
   .text-float-right{
     color: #737373;
     h1{
+      font-family: 'Arsenal', sans-serif;
       font-weight: 400;
       font-size: 32px;
       color: #524840;
     }
     .desc{
       font-size: 16px;
+    }
+    .block-more{
+      a{
+        background-color: transparent;
+        border-color: #DED6C7;
+        color: #524840;
+        font-family: 'Arsenal', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        &:hover{
+          background-color: #DED6C7;
+        }
+      }
     }
   }
 }
@@ -73,12 +142,27 @@ body{
       color: #524840;
       font-size: 48px;
       font-weight: 400;
+      font-family: 'Arsenal', sans-serif;
     }
     .desc{
       color: #737373;
       font-weight: 300;
       font-size: 16px;
       line-height: 25px;
+    }
+    .block-link{
+      a{
+        background-color: #DED6C7;
+        border-color: transparent;
+        color: #524840;
+        font-family: 'Arsenal', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        &:hover{
+          background-color: #fff;
+          border-color: #DED6C7;
+        }
+      }
     }
     .block{
       overflow: hidden;
@@ -111,4 +195,10 @@ body{
       }
     }
   }
+}
+
+.home-before-footer{
+  background: url(../images/home_before_footer.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
 }
