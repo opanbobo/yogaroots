@@ -41,6 +41,15 @@ body {
   background: #000;
   left: 45%;
 }
+#header .navbar .navbar-nav .nav-link.active::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  bottom: 13px;
+  background: #000;
+  left: 45%;
+}
 
 footer {
   background-color: #B9B2A6;
@@ -186,6 +195,66 @@ footer .column-footer-text-wrapper .socmed-link a {
   background: url(../images/home_before_footer.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
+}
+
+.about-section-1 {
+  background: url(../images/about_bg.jpg) no-repeat top center;
+  background-size: 100%;
+}
+.about-section-1 .tagline {
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  color: #524840;
+}
+
+.about-section-2 {
+  background: #DED6C7;
+}
+.about-section-2 .text-left p {
+  font-size: 18px;
+  color: #737373;
+}
+.about-section-2 .text-right h4 {
+  font-size: 26px;
+  line-height: 33px;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #88776A;
+}
+
+.about-section-3 .column-wrapper .title {
+  font-size: 28px;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  color: #524840;
+}
+.about-section-3 .column-wrapper .desc {
+  font-weight: 300;
+  font-size: 21px;
+  color: #737373;
+}
+.about-section-3 .arrows i {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #88776A;
+  background: url(../images/navigation.png) no-repeat center;
+  text-indent: -9999px;
+}
+.about-section-3 .arrows i:hover {
+  background-color: rgba(115, 115, 115, 0.12);
+}
+.about-section-3 .arrows.slick-prev i {
+  left: 2%;
+}
+.about-section-3 .arrows.slick-next i {
+  right: 2%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 /*# sourceMappingURL=main.css.map */

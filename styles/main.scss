@@ -40,6 +40,17 @@ body{
             left: 45%;
           }
         }
+        &.active{
+          &::before{
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 3px;
+            bottom: 13px;
+            background: #000;
+            left: 45%;
+          }
+        }
       }
     }
   }
@@ -69,6 +80,9 @@ footer{
 #after-header{
   padding: 10em 0 20em;
 }
+
+
+// home
 .home-section-1{
   background: url(../images/bg_home_banner.png) no-repeat;
   background-size: cover;
@@ -201,4 +215,81 @@ footer{
   background: url(../images/home_before_footer.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
+}
+
+// end home
+
+// about
+.about-section-1{
+  background: url(../images/about_bg.jpg) no-repeat top center;
+  background-size: 100%;
+  .tagline{
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: #524840;
+  }
+}
+
+.about-section-2{
+  background: #DED6C7;
+  .text-left{
+    p{
+      font-size: 18px;
+      color: #737373;
+    }
+  }
+  .text-right{
+    h4{
+      font-size: 26px;
+      line-height: 33px;
+      font-family: 'Arsenal', sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      color: #88776A;
+    }
+  }
+}
+
+.about-section-3{
+  .column-wrapper{
+    .title{
+      font-size: 28px;
+      font-family: 'Arsenal', sans-serif;
+      font-weight: 400;
+      color: #524840;
+    }
+    .desc{
+      font-weight: 300;
+      font-size: 21px;
+      color: #737373;
+    }
+  }
+  .arrows{
+    i{
+      position: absolute;
+      top: 50%;
+      z-index: 1;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #88776A;
+      background: url(../images/navigation.png) no-repeat center;
+      text-indent: -9999px;
+      &:hover{
+        background-color: rgba(115, 115, 115, 0.12);
+      }
+    }
+    &.slick-prev{
+      i{
+        left: 2%;
+      }
+    }
+    &.slick-next{
+      i{
+        right: 2%;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+    }
+  }
 }
