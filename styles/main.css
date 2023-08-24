@@ -1,6 +1,7 @@
 body {
   font-weight: 300;
   font-family: "Figtree", sans-serif;
+  color: #737373;
 }
 
 #header {
@@ -253,6 +254,46 @@ footer .column-footer-text-wrapper .socmed-link a {
 }
 .about-section-3 .arrows.slick-next i {
   right: 2%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.trainers-section-1 {
+  background: url(../images/bg_trainers.png) no-repeat top center;
+  background-size: 100%;
+}
+.trainers-section-1 .tagline {
+  font-size: 48px;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  color: #524840;
+}
+.trainers-section-1 .floating-column-wrapper {
+  margin-top: 25rem;
+}
+@media screen and (min-width: 768px) {
+  .trainers-section-1 .floating-column-wrapper .img {
+    max-height: 372px;
+  }
+}
+.trainers-section-1 .floating-column-wrapper .block .name {
+  font-size: 28px;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  color: #524840;
+}
+.trainers-section-1 .floating-column-wrapper .block-more a {
+  background-color: transparent;
+  border-color: #8d847c;
+  color: #8d847c;
+  font-size: 20px;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+}
+.trainers-section-1 .floating-column-wrapper .block-more a:hover {
+  background-color: rgba(115, 115, 115, 0.12);
+}
+.trainers-section-1 .floating-column-wrapper .block-more img {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }

@@ -2,6 +2,7 @@
 body{
   font-weight: 300;
   font-family: 'Figtree', sans-serif;
+  color: #737373;
 }
 
 #header{
@@ -216,7 +217,6 @@ footer{
   background-size: cover;
   height: 100vh;
 }
-
 // end home
 
 // about
@@ -287,6 +287,52 @@ footer{
     &.slick-next{
       i{
         right: 2%;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+    }
+  }
+}
+// end about
+
+// trainers
+.trainers-section-1{
+  background: url(../images/bg_trainers.png) no-repeat top center;
+  background-size: 100%;
+  .tagline{
+    font-size: 48px;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 400;
+    color: #524840;
+  }
+  .floating-column-wrapper{
+    margin-top: 25rem;
+    .img{
+      @media screen and (min-width:768px) {
+        max-height: 372px;
+      }
+    }
+    .block{
+      .name{
+        font-size: 28px;
+        font-family: 'Arsenal', sans-serif;
+        font-weight: 400;
+        color: #524840;
+      }
+    }
+    .block-more{
+      a{
+        background-color: transparent;
+        border-color: #8d847c;
+        color: #8d847c;
+        font-size: 20px;
+        font-family: 'Arsenal', sans-serif;
+        font-weight: 400;
+        &:hover{
+          background-color: rgba(115, 115, 115, 0.12);
+        }
+      }
+      img{
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
       }
