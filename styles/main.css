@@ -261,6 +261,7 @@ footer .column-footer-text-wrapper .socmed-link a {
 .trainers-section-1 {
   background: url(../images/bg_trainers.png) no-repeat top center;
   background-size: 100%;
+  padding-bottom: 10em !important;
 }
 .trainers-section-1 .tagline {
   font-size: 48px;
@@ -296,6 +297,19 @@ footer .column-footer-text-wrapper .socmed-link a {
 .trainers-section-1 .floating-column-wrapper .block-more img {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+.trainers-section-1 .pagination li {
+  margin: 0 10px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+.trainers-section-1 .pagination li a {
+  background-color: #F8F7F4;
+  color: #595858;
+}
+.trainers-section-1 .pagination li a.active {
+  background-color: #DED6C7;
 }
 
 /*# sourceMappingURL=main.css.map */
