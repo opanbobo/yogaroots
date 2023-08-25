@@ -312,4 +312,54 @@ footer .column-footer-text-wrapper .socmed-link a {
   background-color: #DED6C7;
 }
 
+.contact-section-1 {
+  background: url(../images/bg_contact.png) no-repeat center;
+  background-size: cover;
+}
+.contact-section-1 textarea {
+  resize: none;
+}
+.contact-section-1 .tagline {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "Arsenal", sans-serif;
+  color: #524840;
+}
+.contact-section-1 .desc {
+  font-size: 18px;
+}
+.contact-section-1 .sub-tagline {
+  font-weight: 400;
+  color: #524840;
+  font-size: 14px;
+}
+.contact-section-1 .sub-tagline-2 {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Arsenal", sans-serif;
+  color: #524840;
+}
+.contact-section-1 .form-contact .form-label {
+  font-size: 14px;
+}
+.contact-section-1 .form-contact .btn-primary {
+  background-color: #DED6C7;
+  border-color: transparent;
+  color: #524840;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Arsenal", sans-serif;
+}
+.contact-section-1 .form-contact .btn-primary:hover {
+  background-color: #fff;
+  color: #DED6C7;
+}
+.contact-section-1 .sosmed {
+  font-size: 20px;
+}
+.contact-section-1 .sosmed a {
+  color: #595858;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=main.css.map */

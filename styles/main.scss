@@ -355,3 +355,57 @@ footer{
     }
   }
 }
+// end trainers
+
+// contact
+.contact-section-1{
+  background: url(../images/bg_contact.png) no-repeat center;
+  background-size: cover;
+  textarea {
+    resize: none;
+  }
+  .tagline{
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Arsenal', sans-serif;
+    color: #524840;
+  }
+  .desc{
+    font-size: 18px;
+  }
+  .sub-tagline{
+    font-weight: 400;
+    color: #524840;
+    font-size: 14px;
+  }
+  .sub-tagline-2{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Arsenal', sans-serif;
+    color: #524840;
+  }
+  .form-contact{
+    .form-label{
+      font-size: 14px;
+    }
+    .btn-primary{
+      background-color: #DED6C7;
+      border-color: transparent;
+      color: #524840;
+      font-size: 20px;
+      font-weight: 400;
+      font-family: 'Arsenal', sans-serif;
+      &:hover{
+        background-color: #fff;
+        color: #DED6C7;
+      }
+    }
+  }
+  .sosmed{
+    font-size: 20px;
+    a{
+      color: #595858;
+      text-decoration: none;
+    }
+  }
+}
