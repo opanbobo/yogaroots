@@ -312,6 +312,69 @@ footer .column-footer-text-wrapper .socmed-link a {
   background-color: #DED6C7;
 }
 
+.classes-section-1 {
+  background: url(../images/bg_classes.png) no-repeat top center;
+  background-size: 100%;
+  padding-bottom: 10em !important;
+}
+.classes-section-1 .tagline {
+  font-size: 48px;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+  color: #524840;
+}
+.classes-section-1 .fc-col-header-cell-cushion {
+  text-decoration: none;
+}
+.classes-section-1 .custom-day-header {
+  text-decoration: none;
+}
+.classes-section-1 .custom-day-header .custom-day {
+  font-size: 25px;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+}
+.classes-section-1 .custom-day-header .custom-weekday {
+  font-weight: 300;
+}
+.classes-section-1 .fc-today-button {
+  display: none !important;
+}
+.classes-section-1 .fc-scrollgrid-sync-table {
+  display: none;
+}
+.classes-section-1 .fc-timegrid-event-harness .fc-v-event {
+  background-color: #DED6C7 !important;
+  border-color: transparent !important;
+  border-left: 2px solid #524840 !important;
+  padding-left: 5px;
+}
+.classes-section-1 .fc-timegrid-event-harness .fc-v-event .fc-event-main {
+  color: #524840 !important;
+}
+.classes-section-1 .fc-timegrid-axis {
+  background-color: #DED6C7;
+}
+.classes-section-1 .fc-scrollgrid-sync-inner {
+  background-color: #DED6C7;
+}
+.classes-section-1 .fc-scrollgrid-sync-inner a {
+  background-color: #DED6C7;
+  color: #524840;
+}
+.classes-section-1 .fc-header-toolbar {
+  justify-content: flex-start !important;
+}
+.classes-section-1 .fc-header-toolbar .fc-toolbar-title {
+  padding-left: 10px;
+  color: #524840;
+  font-weight: 600;
+  font-size: 32px;
+}
+.classes-section-1 #calendar table {
+  background-color: #fff;
+}
+
 .contact-section-1 {
   background: url(../images/bg_contact.png) no-repeat center;
   background-size: cover;

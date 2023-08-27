@@ -1,0 +1,150 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>yogaroots</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/vendor/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="header" class="">
+      <div class="container">
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid">
+            <a class="navbar-brand d-md-none" href="#">
+              <img src="images/logo.png" alt="" class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="trainers.html">Trainers</a>
+                </li>
+                <a class="navbar-brand d-none d-md-block" href="index.html">
+                  <img src="images/logo.png" alt="" class="img-fluid">
+                </a>
+                <li class="nav-item">
+                  <a class="nav-link active" href="classes.html">Classes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <main>
+      <section id="after-header" class="classes-section-1">
+        <div class="container">
+          <div class="d-flex justify-content-center">
+            <div class="col-md-9">
+              <div class="row justify-content-center">
+                <div class="col-md-5 text-center">
+                  <h1 class="tagline">Classes</h1>
+                  <p class="desc">We offer a variety of classes for all levels, from beginner to advanced.</p>
+                </div>
+              </div>
+              <div class="row column-calendar">
+                <div class="d-flex">
+                  <select id="filterDropdown">
+                    <option value="all">All Classes</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="itermidate">Itermidate</option>
+                    <option value="advance">Advance</option>
+                  </select>
+                  <select id="filterDropdown2">
+                    <option value="all">All Class trainers</option>
+                    <option value="gwen">Gwen</option>
+                    <option value="rumi">Rumi</option>
+                    <option value="jamie">Jamie</option>
+                  </select>
+                </div>
+                
+                <div id="calendar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center py-5">
+          <div class="col-md-9">
+            <div class="logo-bottom text-center"><img src="images/logo.png" alt="" class="img-fluid"></div>
+            <div class="column-footer-text-wrapper mt-5">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="title-footer">Address</div>
+                  <div class="after-title">
+                    Prasasta Urban Space 5th floor <br>
+                    Jalan Kawi Raya no 37 <br>
+                    Jakarta Selatan
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="title-footer">Call us</div>
+                  <div class="after-title">
+                    +62 8566 2739
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="d-flex ">
+                  <div class="column me-auto">
+                    <div class="copy">Copyright &copy; 2023. All rights reserved</div>
+                  </div>
+                  <div class="column socmed-link">
+                    <div class="d-flex">
+                      <a href="#" target="_blank" class="px-2"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      <a href="#" target="_blank" class="px-2"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="#" target="_blank" class="px-2"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="#" target="_blank" class="px-2"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </footer>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+    <script type="text/javascript" src="scripts/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="scripts/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src='scripts/vendor/index.global.min.js'></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
