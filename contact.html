@@ -76,20 +76,29 @@
                 </div>
                 <div class="col-md-6">
                   <h4 class="sub-tagline-2 mb-4">Send Message</h4>
-                  <form class="form-contact">
+                  <form class="form-contact needs-validation" novalidate>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label mb-0">Your email address (so we can reply to you)</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address">
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address" required>
+                      <div class="invalid-feedback">
+                        Please fill the field
+                      </div>
                     </div>
                     <div class="mb-3">
                       <label for="exampleInputSubject" class="form-label mb-0">Subject</label>
-                      <input type="text" class="form-control" id="exampleInputSubject" aria-describedby="emailHelp" placeholder="Let us know how we can help you">
+                      <input type="text" class="form-control" id="exampleInputSubject" aria-describedby="emailHelp" placeholder="Let us know how we can help you" required>
+                      <div class="invalid-feedback">
+                        Please fill the field
+                      </div>
                     </div>
                     <div class="mb-3">
                       <label for="floatingTextarea2" class="form-label mb-0">Full description</label>
-                      <textarea class="form-control" placeholder="Include as much detail as you can" rows="3" id="floatingTextarea2"></textarea>
+                      <textarea class="form-control" placeholder="Include as much detail as you can" rows="3" id="floatingTextarea2" required></textarea>
+                      <div class="invalid-feedback">
+                        Please fill the field
+                      </div>
                     </div>
-                    <button type="submit" class="btn btn-primary px-4">Submit</button>
+                    <button type="submit" class="btn btn-primary px-4" data-bs-dismiss="modal">Submit</button>
                   </form>
                 </div>
               </div>
@@ -98,6 +107,43 @@
         </div>
       </section>
     </main>
+    
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="thankYouModalLabel">Thank You!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  Thank you for submitting the form. We will get in touch with you shortly.
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- end -->
+
+    <script>
+      // Handle form submission and show the modal
+      document.querySelector('.form-contact').addEventListener('submit', function (event) {
+          event.preventDefault();
+          
+          // Perform your form validation here
+          
+          if (this.checkValidity()) {
+              $('#thankYouModal').modal('show'); // Show the modal
+              // You can also reset the form here if needed
+              // this.reset();
+          }
+          
+          this.classList.add('was-validated');
+      });
+    </script>
+
     <footer>
       <div class="container">
         <div class="row justify-content-center py-5">
@@ -154,7 +200,7 @@
     <script type="text/javascript" src="scripts/jquery-3.7.0.min.js"></script>
     <script type="text/javascript" src="scripts/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+    <script type="text/javascript" src='scripts/vendor/index.global.min.js'></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>

@@ -19,6 +19,21 @@ jQuery(document).ready(function($) {
     nextArrow: "<div type='button' class='slick-next arrows pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></div>"
   });
 
+  // Handle form submission and show the modal
+  document.querySelector('.form-contact').addEventListener('submit', function (event) {
+    event.preventDefault();
+    
+    // Perform your form validation here
+    
+    if (this.checkValidity()) {
+        $('#thankYouModal').modal('show'); // Show the modal
+        // You can also reset the form here if needed
+        // this.reset();
+    }
+    
+    this.classList.add('was-validated');
+  });
+
   // full calendar
   var calendarEl = document.getElementById('calendar');
   var calendar = new FullCalendar.Calendar(calendarEl, {
