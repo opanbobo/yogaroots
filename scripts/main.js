@@ -1,4 +1,5 @@
 jQuery(document).ready(function($) {
+
   // header
   const header = $("#header"); // Use jQuery selector
   const toggleClass = "scroll-head";
@@ -13,12 +14,13 @@ jQuery(document).ready(function($) {
   });
 
   // slider
-  $('.single-item').slick({
+  $(".single-item").slick({
     arrows: true,
     prevArrow: "<div type='button' class='slick-prev arrows pull-left'><i class='fa fa-arrow-left' aria-hidden='true'></i></div>",
     nextArrow: "<div type='button' class='slick-next arrows pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></div>"
   });
-
+  
+  
   // Handle form submission and show the modal
   $('.form-contact').on('submit', function (event) {
     event.preventDefault();
@@ -58,6 +60,7 @@ jQuery(document).ready(function($) {
   }
 
   // full calendar
+  
   var calendarEl = document.getElementById('calendar');
   var calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: 'timeGridWeek',
@@ -183,7 +186,7 @@ jQuery(document).ready(function($) {
         $('#eventAvatar').attr('src', arg.event.extendedProps.eventAvatar);
         $('#eventLink').attr('href', arg.event.extendedProps.eventLink);
         $('#eventDetailsModal').modal('show'); // Show the modal
-    },
+      },
       eventContent: function(arg) {
         var eventHtml = '<div class="custom-event">' +
                         '<div class="event-title">' + arg.event.title + '</div>' +

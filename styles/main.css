@@ -75,6 +75,11 @@ footer .column-footer-text-wrapper .socmed-link a {
   background: url(../images/bg_home_banner.png) no-repeat;
   background-size: cover;
 }
+@media screen and (max-width: 767px) {
+  .home-section-1 {
+    padding-bottom: 10em !important;
+  }
+}
 .home-section-1 .floating-text-wrapper {
   color: #fff;
 }
@@ -82,6 +87,11 @@ footer .column-footer-text-wrapper .socmed-link a {
   position: absolute;
   right: 0;
   overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .home-section-1 .floating-text-wrapper .home-banner {
+    position: inherit;
+  }
 }
 .home-section-1 .floating-text-wrapper .title {
   font-family: "Arsenal", sans-serif;
@@ -179,6 +189,13 @@ footer .column-footer-text-wrapper .socmed-link a {
 .home-section-3 .column-wrapper-classes .block .img a {
   display: block;
 }
+@media screen and (max-width: 767px) {
+  .home-section-3 .column-wrapper-classes .block .img a img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
 .home-section-3 .column-wrapper-classes .block .column-white .name {
   font-family: "Arsenal", sans-serif;
   font-weight: 400;
@@ -197,6 +214,11 @@ footer .column-footer-text-wrapper .socmed-link a {
   background-size: cover;
   height: 100vh;
 }
+@media screen and (max-width: 767px) {
+  .home-before-footer {
+    height: 25vh;
+  }
+}
 
 .about-section-1 {
   background: url(../images/about_bg.jpg) no-repeat top center;
@@ -207,6 +229,22 @@ footer .column-footer-text-wrapper .socmed-link a {
   font-weight: 400;
   font-size: 48px;
   color: #524840;
+}
+@media screen and (max-width: 767px) {
+  .about-section-1 .tagline {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-section-1 .floating-column-img-wrapper .img {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-section-1 .after-floating-column-img-wrapper .img {
+    text-align: center !important;
+  }
 }
 
 .about-section-2 {
@@ -224,6 +262,11 @@ footer .column-footer-text-wrapper .socmed-link a {
   font-style: italic;
   color: #88776A;
 }
+@media screen and (max-width: 767px) {
+  .about-section-2 .text-right h4 {
+    margin-top: 20px;
+  }
+}
 
 .about-section-3 .column-wrapper .title {
   font-size: 28px;
@@ -231,10 +274,18 @@ footer .column-footer-text-wrapper .socmed-link a {
   font-weight: 400;
   color: #524840;
 }
+@media screen and (max-width: 767px) {
+  .about-section-3 .column-wrapper .title {
+    font-size: 20px;
+  }
+}
 .about-section-3 .column-wrapper .desc {
   font-weight: 300;
   font-size: 21px;
   color: #737373;
+}
+.about-section-3 .slider-wrapper {
+  overflow: hidden;
 }
 .about-section-3 .arrows i {
   position: absolute;
@@ -245,6 +296,13 @@ footer .column-footer-text-wrapper .socmed-link a {
   border: 1px solid #88776A;
   background: url(../images/navigation.png) no-repeat center;
   text-indent: -9999px;
+}
+@media screen and (max-width: 767px) {
+  .about-section-3 .arrows i {
+    top: 30%;
+    width: 40px;
+    height: 40px;
+  }
 }
 .about-section-3 .arrows i:hover {
   background-color: rgba(115, 115, 115, 0.12);
@@ -282,6 +340,13 @@ footer .column-footer-text-wrapper .socmed-link a {
     max-height: 372px;
   }
 }
+@media screen and (max-width: 767px) {
+  .trainers-section-1 .floating-column-wrapper .img img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+  }
+}
 .trainers-section-1 .floating-column-wrapper .block .name {
   font-size: 28px;
   font-family: "Arsenal", sans-serif;
@@ -295,6 +360,11 @@ footer .column-footer-text-wrapper .socmed-link a {
   font-size: 20px;
   font-family: "Arsenal", sans-serif;
   font-weight: 400;
+}
+@media screen and (max-width: 767px) {
+  .trainers-section-1 .floating-column-wrapper .block-more a {
+    width: 100%;
+  }
 }
 .trainers-section-1 .floating-column-wrapper .block-more a:hover {
   background-color: rgba(115, 115, 115, 0.12);
@@ -413,6 +483,14 @@ footer .column-footer-text-wrapper .socmed-link a {
 @media screen and (min-width: 768px) {
   .classes-section-1 .column-calendar .select-filter {
     margin-bottom: -45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .classes-section-1 .column-calendar .select-filter {
+    flex-direction: column;
+  }
+  .classes-section-1 .column-calendar .select-filter #filterDropdown {
+    margin: 0 !important;
   }
 }
 .classes-section-1 .custom-day-header {
