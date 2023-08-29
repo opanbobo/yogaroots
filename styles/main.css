@@ -377,6 +377,7 @@ footer .column-footer-text-wrapper .socmed-link a {
   text-transform: capitalize;
   position: relative;
   height: 100%;
+  cursor: pointer;
 }
 .classes-section-1 .custom-event .event-title {
   font-weight: 600;
