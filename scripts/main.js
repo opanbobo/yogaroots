@@ -41,6 +41,22 @@ jQuery(document).ready(function($) {
     return startTime + ' - ' + endTime;
   }
 
+  // format date modal
+  function formatDate(dateString) {
+    const options = { weekday: 'long', month: 'numeric', day: '2-digit', year: 'numeric' };
+    const date = new Date(dateString);
+    const formattedDate = date.toLocaleDateString('en-US', options);
+
+    // Ubah format bulan dan hari menjadi 2 digit
+    const parts = formattedDate.split(', ');
+    const monthDayYear = parts[1].split('/');
+    const month = monthDayYear[0].length === 1 ? '0' + monthDayYear[0] : monthDayYear[0];
+    const day = monthDayYear[1].length === 1 ? '0' + monthDayYear[1] : monthDayYear[1];
+    const year = monthDayYear[2];
+
+    return parts[0] + ', ' + month + ' ' + day + ' ' + year;
+  }
+
   // full calendar
   var calendarEl = document.getElementById('calendar');
   var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -77,10 +93,11 @@ jQuery(document).ready(function($) {
           extendedProps: { 
             eventDescription: 'beginner', 
             eventLabel: 'jamie',
-            eventDate: 'Tuesday, 03 09 2023',
+            eventDate: '2023-09-03T12:00:00',
             eventJob: 'Sudharsan Kriya yoga practitioner',
             eventImage: 'images/calsses_img_1.jpg',
-            eventAvatar: 'images/trainers_img_1.jpg'  
+            eventAvatar: 'images/trainers_img_1.jpg',
+            eventLink: 'https://www.detik.com/'  
           }
         },
         {
@@ -90,10 +107,11 @@ jQuery(document).ready(function($) {
             extendedProps: { 
               eventDescription: 'Let this dynamic practice energize your body, calm your mind, and bring you into the present moment. Discover the transformative power of Vinyasa Flow Yoga today.', 
               eventLabel: 'gwen', 
-              eventDate: 'Tuesday, 03 09 2023',
+              eventDate: '2023-09-03T10:00:00',
               eventJob: 'Sudharsan Kriya yoga practitioner',
               eventImage: 'images/img-modal.png' ,
-              eventAvatar: 'images/trainers_img_1.jpg'  
+              eventAvatar: 'images/trainers_img_1.jpg',
+              eventLink: 'https://www.detik.com/'  
             }
         },
         {
@@ -103,10 +121,11 @@ jQuery(document).ready(function($) {
             extendedProps: { 
               eventDescription: 'advance', 
               eventLabel: 'rumi',
-              eventDate: 'Tuesday, 03 09 2023',
+              eventDate: '2023-09-03T15:00:00',
               eventJob: 'Sudharsan Kriya yoga practitioner',
               eventImage: 'images/calsses_img_1.jpg',
-              eventAvatar: 'images/trainers_img_1.jpg'  
+              eventAvatar: 'images/trainers_img_1.jpg',
+              eventLink: 'https://www.detik.com/'  
             }
         },
         {
@@ -116,10 +135,11 @@ jQuery(document).ready(function($) {
           extendedProps: { 
             eventDescription: 'meditation text', 
             eventLabel: 'rumi',
-            eventDate: 'Tuesday, 03 09 2023',
+            eventDate: '2023-09-05T10:00:00',
             eventJob: 'Sudharsan Kriya yoga practitioner',
             eventImage: 'images/trainers_img_4.jpg',
-            eventAvatar: 'images/trainers_img_1.jpg'   
+            eventAvatar: 'images/trainers_img_1.jpg',
+            eventLink: 'https://www.detik.com/'   
           }
         },
         {
@@ -129,10 +149,11 @@ jQuery(document).ready(function($) {
           extendedProps: { 
             eventDescription: 'sky workshop', 
             eventLabel: 'gwen',
-            eventDate: 'Tuesday, 03 09 2023',
+            eventDate: '2023-09-04T14:00:00',
             eventJob: 'Sudharsan Kriya yoga practitioner',
             eventImage: 'images/trainers_img_2.jpg',
-            eventAvatar: 'images/trainers_img_1.jpg'     
+            eventAvatar: 'images/trainers_img_1.jpg',
+            eventLink: 'https://www.detik.com/'     
           }
         },
         {
@@ -142,10 +163,11 @@ jQuery(document).ready(function($) {
           extendedProps: { 
             eventDescription: 'Let this dynamic practice energize your body, calm your mind, and bring you into the present moment. Discover the transformative power of Vinyasa Flow Yoga today.', 
             eventLabel: 'gwen', 
-            eventDate: 'Tuesday, 03 09 2023',
+            eventDate: '2023-09-06T10:00:00',
             eventJob: 'Sudharsan Kriya yoga practitioner',
             eventImage: 'images/img-modal.png',
-            eventAvatar: 'images/trainers_img_1.jpg'   
+            eventAvatar: 'images/trainers_img_1.jpg',
+            eventLink: 'https://www.detik.com/'   
           }
         }
 
@@ -154,12 +176,12 @@ jQuery(document).ready(function($) {
         $('#eventTitle').text(arg.event.title);
         $('#eventDescription').text(arg.event.extendedProps.eventDescription);
         $('#eventLabel').text(arg.event.extendedProps.eventLabel);
-        $('#eventDate').text(arg.event.extendedProps.eventDate);
+        $('#eventDate').text(formatDate(arg.event.extendedProps.eventDate));
         $('#eventJob').text(arg.event.extendedProps.eventJob);
         $('#eventTime').text(formatEventTime(arg.event.start, arg.event.end));
         $('#eventImage').attr('src', arg.event.extendedProps.eventImage);
         $('#eventAvatar').attr('src', arg.event.extendedProps.eventAvatar);
-        
+        $('#eventLink').attr('href', arg.event.extendedProps.eventLink);
         $('#eventDetailsModal').modal('show'); // Show the modal
     },
       eventContent: function(arg) {
@@ -184,6 +206,12 @@ jQuery(document).ready(function($) {
         $('#eventTime').text('');
         $('#eventImage').attr('src', '');
         $('#eventAvatar').attr('src', '');
+        $('#eventLink').attr('src', '');
+    });
+
+    // Handle the event link click to close the modal
+    $('#eventLink').on('click', function() {
+      $('#eventDetailsModal').modal('hide'); // Hide the modal
     });
 
     // Filter berdasarkan tipe kelas
