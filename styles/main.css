@@ -272,6 +272,11 @@ footer .column-footer-text-wrapper .socmed-link a {
 .trainers-section-1 .floating-column-wrapper {
   margin-top: 25rem;
 }
+@media screen and (max-width: 767px) {
+  .trainers-section-1 .floating-column-wrapper {
+    margin-top: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .trainers-section-1 .floating-column-wrapper .img {
     max-height: 372px;
@@ -312,10 +317,74 @@ footer .column-footer-text-wrapper .socmed-link a {
   background-color: #DED6C7;
 }
 
+.modal-calendar .modal-header {
+  height: 250px;
+  overflow: hidden;
+}
+.modal-calendar .modal-header img {
+  width: 100%;
+}
+.modal-calendar .modal-body #eventTitle {
+  color: #524840;
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Arsenal", sans-serif;
+  text-transform: capitalize;
+}
+.modal-calendar .modal-body #eventLabel {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.modal-calendar .modal-body #eventDescription {
+  margin-bottom: 20px;
+}
+.modal-calendar .modal-body .instructor-block .img-avatar {
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.modal-calendar .modal-footer .btn {
+  background-color: #DED6C7;
+  border-color: transparent;
+  color: #524840;
+}
+.modal-calendar .btn-close {
+  position: absolute;
+  right: 22px;
+  font-size: 14px;
+}
+
 .classes-section-1 {
   background: url(../images/bg_classes.png) no-repeat top center;
   background-size: 100%;
   padding-bottom: 10em !important;
+}
+.classes-section-1 select {
+  border-radius: 50px;
+  background: #F8F7F4;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  color: #262524;
+  font-family: "Arsenal", sans-serif;
+  font-weight: 400;
+}
+.classes-section-1 .fc .fc-timegrid-slot {
+  height: 3em;
+}
+.classes-section-1 .custom-event {
+  text-transform: capitalize;
+  position: relative;
+  height: 100%;
+}
+.classes-section-1 .custom-event .event-title {
+  font-weight: 600;
+}
+.classes-section-1 .custom-event .event-time {
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
 }
 .classes-section-1 .tagline {
   font-size: 48px;
@@ -325,6 +394,25 @@ footer .column-footer-text-wrapper .socmed-link a {
 }
 .classes-section-1 .fc-col-header-cell-cushion {
   text-decoration: none;
+}
+.classes-section-1 .event-label {
+  font-size: 12px;
+}
+.classes-section-1 .column-calendar {
+  margin-top: 30rem;
+}
+@media screen and (max-width: 767px) {
+  .classes-section-1 .column-calendar {
+    margin-top: 0;
+  }
+}
+.classes-section-1 .column-calendar .select-filter {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .classes-section-1 .column-calendar .select-filter {
+    margin-bottom: -45px;
+  }
 }
 .classes-section-1 .custom-day-header {
   text-decoration: none;
@@ -348,6 +436,7 @@ footer .column-footer-text-wrapper .socmed-link a {
   border-color: transparent !important;
   border-left: 2px solid #524840 !important;
   padding-left: 5px;
+  padding-right: 5px;
 }
 .classes-section-1 .fc-timegrid-event-harness .fc-v-event .fc-event-main {
   color: #524840 !important;

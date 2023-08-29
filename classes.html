@@ -66,12 +66,15 @@
                 </div>
               </div>
               <div class="row column-calendar">
-                <div class="d-flex">
-                  <select id="filterDropdown">
+                <div class="d-flex select-filter">
+                  <select id="filterDropdown" class="mx-2 ms-auto">
                     <option value="all">All Classes</option>
-                    <option value="beginner">Beginner</option>
-                    <option value="itermidate">Itermidate</option>
-                    <option value="advance">Advance</option>
+                    <option value="asanas beginner">Asanas Beginner</option>
+                    <option value="asanas intermidate">Asanas Intermidate</option>
+                    <option value="asanas advance">Asanas Advance</option>
+                    <option value="meditation">Meditation</option>
+                    <option value="sky workshop">Sky Workshop</option>
+                    <option value="sudharsan kriya">Sudharsan Kriya</option>
                   </select>
                   <select id="filterDropdown2">
                     <option value="all">All Class trainers</option>
@@ -88,6 +91,40 @@
         </div>
       </section>
     </main>
+    
+    <!-- Modal for Event Details -->
+    <div class="modal fade modal-calendar" id="eventDetailsModal" tabindex="-1" aria-labelledby="eventDetailsModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header p-0 position-relative">
+            <img id="eventImage" src="" alt="Event Image" class="img-fluid">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Event details content goes here -->
+            <div id="eventTitle"></div>
+            <div id="eventDescription"></div>
+            <div id="eventDate"></div>
+            <div id="eventTime"></div>
+            <p class="mt-4 mb-2">Instructor</p>
+            <div class="instructor-block d-flex">
+              <div class="d-flex me-2">
+                <div class="img-avatar"><img id="eventAvatar" src="" alt="" class="img-fluid"></div>
+              </div>
+              <div class="d-flex flex-column">
+                <div id="eventLabel"></div>
+                <div id="eventJob"></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Join Class</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <footer>
       <div class="container">
         <div class="row justify-content-center py-5">
