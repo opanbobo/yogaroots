@@ -16,8 +16,8 @@ jQuery(document).ready(function($) {
   // slider
   $(".single-item").slick({
     arrows: true,
-    prevArrow: "<div type='button' class='slick-prev arrows pull-left'><i class='fa fa-arrow-left' aria-hidden='true'></i></div>",
-    nextArrow: "<div type='button' class='slick-next arrows pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></div>"
+    prevArrow: "<div type='button' class='slick-prev arrows pull-left'><i class='fa-solid fa-arrow-left'></i></div>",
+    nextArrow: "<div type='button' class='slick-next arrows pull-right'><i class='fa-solid fa-arrow-right'></i></div>"
   });
   
   
@@ -75,6 +75,16 @@ jQuery(document).ready(function($) {
         hour: '2-digit',
         minute: '2-digit',
         omitZeroMinute: false
+      },
+      // Menambahkan tampilan "per hari" saat di layar seluler
+      responsive: true,
+      height: 'auto',
+      views: {
+          timeGridDay: {
+              type: 'timeGrid',
+              duration: { days: 1 }, // Mengatur durasi tampilan "per hari"
+              buttonText: 'Day'
+          }
       },
       locale: 'id',   
       dayHeaderContent: function(arg) {
@@ -196,6 +206,20 @@ jQuery(document).ready(function($) {
         return { html: eventHtml };
       }
     });
+
+    // Tambahkan kode berikut setelah inisialisasi kalender
+    var mediaQuery = window.matchMedia("(max-width: 480px)");
+
+    mediaQuery.addListener(handleMediaQueryChange);
+    handleMediaQueryChange(mediaQuery);
+
+    function handleMediaQueryChange(mediaQuery) {
+        if (mediaQuery.matches) {
+            calendar.changeView('timeGridDay');
+        } else {
+            calendar.changeView('timeGridWeek');
+        }
+    }
 
     calendar.render();
 

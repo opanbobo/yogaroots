@@ -16,7 +16,12 @@ body{
     background-color: rgba(255, 255, 255, 0.89);
   }
   &.scroll-head{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .navbar-brand {
+    @media screen and (max-width:567px) {
+      margin-left: -10px;
+    }
   }
   .navbar {
     .navbar-nav {
@@ -309,7 +314,7 @@ footer{
     overflow: hidden;
   }
   .arrows{
-    i{
+    svg{
       position: absolute;
       top: 50%;
       z-index: 1;
@@ -318,6 +323,7 @@ footer{
       border: 1px solid #88776A;
       background: url(../images/navigation.png) no-repeat center;
       text-indent: -9999px;
+      color: transparent;
       @media screen and (max-width:767px) {
         top: 30%;
         width: 40px;
@@ -328,12 +334,12 @@ footer{
       }
     }
     &.slick-prev{
-      i{
+      svg{
         left: 2%;
       }
     }
     &.slick-next{
-      i{
+      svg{
         right: 2%;
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
@@ -522,6 +528,7 @@ footer{
       }
       @media screen and (max-width:767px) {
         flex-direction: column;
+        padding-right: 15px;
         #filterDropdown{
           margin: 0 !important;
         }
