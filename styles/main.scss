@@ -104,6 +104,11 @@ footer{
       @media screen and (max-width:767px) {
         position: inherit;
       }
+      img{
+        @media screen and (min-width:768px) {
+          width: 700px;
+        }
+      }
     }
     .title{
       font-family: 'Arsenal', sans-serif;

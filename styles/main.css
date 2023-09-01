@@ -98,6 +98,11 @@ footer .column-footer-text-wrapper .socmed-link a {
     position: inherit;
   }
 }
+@media screen and (min-width: 768px) {
+  .home-section-1 .floating-text-wrapper .home-banner img {
+    width: 700px;
+  }
+}
 .home-section-1 .floating-text-wrapper .title {
   font-family: "Arsenal", sans-serif;
   font-size: 43px;
