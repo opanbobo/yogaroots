@@ -500,18 +500,25 @@ footer{
     cursor: pointer;
     .event-title{
       font-weight: 600;
-      font-size: 12px;
       line-height: 12px;
-      white-space: nowrap;
+      flex-grow: 0;
+      flex-shrink: 0;
+      max-height: 100%;
       overflow: hidden;
-      text-overflow: ellipsis;
+      font-size: var(--fc-small-font-size);
+      margin-bottom: 1px;
+      white-space: nowrap;
     }
     .event-label{
       font-size: 11px;
       line-height: 11px;
-      white-space: nowrap;
+      flex-grow: 0;
+      flex-shrink: 0;
+      max-height: 100%;
       overflow: hidden;
-      text-overflow: ellipsis;
+      font-size: var(--fc-small-font-size);
+      margin-bottom: 1px;
+      white-space: nowrap;
     }
     .event-time{
       font-size: 10px;
