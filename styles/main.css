@@ -452,21 +452,35 @@ footer .column-footer-text-wrapper .socmed-link a {
   font-weight: 400;
 }
 .classes-section-1 .fc .fc-timegrid-slot {
-  height: 3em;
+  height: 4em;
 }
 .classes-section-1 .custom-event {
   text-transform: capitalize;
   position: relative;
   height: 100%;
+  overflow: hidden;
   cursor: pointer;
 }
 .classes-section-1 .custom-event .event-title {
   font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.classes-section-1 .custom-event .event-label {
+  font-size: 11px;
+  line-height: 11px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .classes-section-1 .custom-event .event-time {
   font-size: 10px;
   position: absolute;
   bottom: 0;
+  white-space: nowrap;
 }
 .classes-section-1 .tagline {
   font-size: 48px;

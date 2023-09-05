@@ -490,20 +490,34 @@ footer{
     font-weight: 400;
   }
   .fc .fc-timegrid-slot{
-    height: 3em;
+    height: 4em;
   }
   .custom-event{
     text-transform: capitalize;
     position: relative;
     height: 100%;
+    overflow: hidden;
     cursor: pointer;
     .event-title{
       font-weight: 600;
+      font-size: 12px;
+      line-height: 12px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .event-label{
+      font-size: 11px;
+      line-height: 11px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .event-time{
       font-size: 10px;
       position: absolute;
       bottom: 0;
+      white-space: nowrap;
     }
   }
   .tagline{

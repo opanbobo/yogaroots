@@ -64,8 +64,9 @@ jQuery(document).ready(function($) {
   var calendarEl = document.getElementById('calendar');
   var calendar = new FullCalendar.Calendar(calendarEl, {
       initialView: 'timeGridWeek',
-      slotMinTime: '09:00:00',
+      slotMinTime: '07:00:00',
       slotMaxTime: '23:00:00',
+      slotDuration: '00:30:00',
       headerToolbar: {
         left: 'prev,next today',
         center: 'title',
@@ -101,8 +102,8 @@ jQuery(document).ready(function($) {
       events: [
         {
           title: 'asanas beginner',
-          start: '2023-09-03T12:00:00',
-          end: '2023-09-03T13:00:00',
+          start: '2023-09-03T07:00:00',
+          end: '2023-09-03T08:30:00',
           extendedProps: { 
             eventDescription: 'beginner', 
             eventLabel: 'jamie',
@@ -115,8 +116,8 @@ jQuery(document).ready(function($) {
         },
         {
             title: 'asanas intermidate',
-            start: '2023-09-03T10:00:00',
-            end: '2023-09-03T11:00:00',
+            start: '2023-09-03T07:00:00',
+            end: '2023-09-03T08:30:00',
             extendedProps: { 
               eventDescription: 'Let this dynamic practice energize your body, calm your mind, and bring you into the present moment. Discover the transformative power of Vinyasa Flow Yoga today.', 
               eventLabel: 'gwen', 
@@ -129,8 +130,8 @@ jQuery(document).ready(function($) {
         },
         {
             title: 'asanas advance',
-            start: '2023-09-03T15:00:00',
-            end: '2023-09-03T17:00:00',
+            start: '2023-09-03T10:00:00',
+            end: '2023-09-03T11:00:00',
             extendedProps: { 
               eventDescription: 'advance', 
               eventLabel: 'rumi',
